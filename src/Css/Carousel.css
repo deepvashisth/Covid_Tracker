@@ -1,0 +1,21 @@
+.main{
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+
+}
+.img1{
+  height: 20rem;
+}
+
+.buttonColor{
+  color: black;
+}
+
+@media (max-width:650px) {
+.img1{
+  height: 10rem;
+}
+}
