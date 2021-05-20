@@ -4,12 +4,7 @@ import "../Css/NavigationBar.css"
 const NavigationBar = () => {
     return (
         <div>
-<<<<<<< HEAD
-        
-            <nav className="navbar navbar-expand-lg navbar-light bg-light">
-=======
             <nav className="navbar navbar-expand-lg navbar-light bg">
->>>>>>> 44416b0eeca68fc4140669ed66c2e1db5479c98d
   <div className="container-fluid">
     <a className="navbar-brand" href="/">Covid Tracker</a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
