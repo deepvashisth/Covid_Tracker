@@ -1,11 +1,12 @@
 import "../Css/Carousel.css"
-import deep from '../Css/deep.jpg'
+import deep from '../images/deep.jpg'
 
 
 
 const Carousel = () => {
 return (
 <div>
+<section id="">
   <div id="carouselExampleControls" className="carousel slide main" data-bs-ride="carousel">
     <div className="carousel-inner">
       <div className="carousel-item active">
@@ -61,6 +62,7 @@ return (
       <span className="visually-hidden">Next</span>
     </button>
   </div>
+  </section>
 </div>
 )
 }
