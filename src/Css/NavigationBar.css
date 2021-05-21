@@ -19,7 +19,7 @@ p{
 a{
   text-decoration:none;
 }
-/* NAVIGATION  #fc5404 */
+/* NAVIGATION */
 
 nav ul li {
   display: inline-block;
@@ -46,7 +46,7 @@ nav.shift ul li a {
   z-index: 1;
 }
 nav.shift ul li a:hover {
-  color: #91640f;
+  color: white;
 }
 nav.shift ul li a:after {
   display: block;

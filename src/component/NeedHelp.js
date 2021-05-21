@@ -2,7 +2,7 @@ import "../Css/NeedHelp.css"
 
 const NeedHelp = () => {
 return (
-<div className="center">
+<div>
   <table className="styled-table">
     <thead>
       <tr>
