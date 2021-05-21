@@ -1,5 +1,5 @@
 import '../Css/Home.css'
-import corrona from '../images/corrona.jpg'
+import vaccine2 from '../images/vaccine2.jpeg'
 
 const Home = () => {
     return (
@@ -26,7 +26,7 @@ const Home = () => {
                         </div>
 
                         <div className='col-lg-6 col-md-12 right-box'>
-                        <img className='image_corrona' src={corrona} alt="" />
+                        <img className='image_corrona' src={vaccine2} alt="" />
 
                         </div>
 

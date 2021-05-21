@@ -57,11 +57,26 @@ const Quiz = () => {
 			setShowScore(true);
 		}
 	};
+
+	let feedback='';
+
+	if (score >=3)
+	{
+		feedback=' good Job'
+	}
+	else{
+		feedback='  learn more about covid'
+	}
+
 	return (
 		<div className='quizTab'>
 			{showScore ? (
 				<div className='score-section'>
-					You scored {score} out of {questions.length}
+					You scored {score} out of {questions.length}  <span class='cl-feed'>{feedback}</span>
+					
+					
+					
+					
 				</div>
 			) : (
 				<>
