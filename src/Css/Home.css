@@ -19,7 +19,7 @@
   text-align: center;
 }
 
-h1 {
+.para {
   font-family: "Montserrat", sans-serif;
   color: #da4b4b;
   font-weight: 690;
@@ -56,7 +56,7 @@ hr {
     height: 90%;
     width: 90%;
   }
-  h1 {
+  .para {
     font-size: 3.7rem;
   }
   h3 {

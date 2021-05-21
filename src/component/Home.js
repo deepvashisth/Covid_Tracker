@@ -12,7 +12,7 @@ const Home = () => {
                             <br />
                             <br />
                             <br />
-                            <h1>Covid-19</h1>
+                            <h1 className='para'>Covid-19</h1>
                             <br></br>
                             <h3>Lets get vaccinated together</h3>
                             <br></br>
