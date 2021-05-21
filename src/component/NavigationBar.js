@@ -12,7 +12,7 @@ return (
   <nav className="navbar navbar-expand-lg navbar-light bg">
     <div className="container-fluid">
       <Link id="branding" to='/'>
-      <p className="" href="/">Covid Tracker</p>
+      <p href="/">Covid Tracker</p>
       </Link>
 
       <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,8 +35,7 @@ return (
                 <Link to='/needhelp'>Need Help</Link>
               </li>
               <li>
-                <Link to='/
-              '>Contact Us</Link>
+                <Link to='/'>Contact Us</Link>
               </li>
             </ul>
           </nav>
