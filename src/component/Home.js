@@ -7,8 +7,8 @@ const Home = () => {
 
             <div className='container-fluid'>
                     <div className='row rowColor'>
-                        <div className='col-lg-6 col-md-6 left-box'>
-                            <br />
+                        <div className='col-lg-6 col-md-12 left-box'>
+                            
                             <br />
                             <br />
                             <br />
@@ -18,14 +18,24 @@ const Home = () => {
                             <br></br>
                             <br></br>
                             <button type="button" class="btn btn-dark btn-lg download-button">
-                            check Avaibility    <i class="fas fa-clinic-medical"></i>  </button>
+                            check Vaccine Avaibility    <i class="fas fa-clinic-medical"></i>  </button>
+                            <br />
+                            <br />
+                            <br />
+                            
                         </div>
 
-                        <div className='col-lg-6 col-md-6 right-box'>
+                        <div className='col-lg-6 col-md-12 right-box'>
                         <img className='image_corrona' src={corrona} alt="" />
+                        
                         </div>
 
                     </div>
+                    
+                <hr></hr>
+
+                    
+                    
             </div>
 
 

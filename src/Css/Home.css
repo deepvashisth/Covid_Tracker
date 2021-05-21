@@ -4,13 +4,14 @@
 .right-box {
   margin: 0;
 }
-.rowColor{
+.rowColor {
   background-color: #f8f5f1;
+  margin-bottom: 7vh;
 }
 .image_corrona {
-  height: 87%;
-  width: 87%;
-  padding-top: 6rem;
+  height: 90%;
+  width: 90%;
+  padding-top: 5rem;
   padding-left: 6rem;
 }
 
@@ -34,4 +35,37 @@ h3 {
 
 #home {
   margin-bottom: 6vh;
+}
+
+hr {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 30px;
+}
+@media (max-width: 938px) {
+  .image_corrona {
+    height: 80%;
+    width: 80%;
+    padding-top: 5rem;
+    padding-left: 6rem;
+  }
+}
+
+@media (max-width: 537px) {
+  .image_corrona {
+    height: 90%;
+    width: 90%;
+  }
+  h1 {
+    font-size: 3.7rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 445px) {
+  .image_corrona {
+    padding-left: 3rem;
+  }
 }
