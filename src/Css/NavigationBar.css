@@ -1,12 +1,25 @@
 .bg {
   background-color: #e4efe7;
 }
-
 .nav-items {
   margin-left: 62%;
 }
-
-/* NAVIGATION */
+#branding{
+   margin: 10px 20px;
+   font-size:1.5rem;
+   text-decoration:none;
+   color: green;
+}
+#branding :hover{
+  color: #fc5404;
+}
+p{
+  margin-bottom: 0;;
+}
+a{
+  text-decoration:none;
+}
+/* NAVIGATION  #fc5404 */
 
 nav ul li {
   display: inline-block;

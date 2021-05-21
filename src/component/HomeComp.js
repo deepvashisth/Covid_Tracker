@@ -8,9 +8,7 @@ const HomeComp = () => {
         <div>
         <Home />
         <Carousel />
-        <Footer  />
-
-        
+        <Footer />
         </div>
     )
 }
