@@ -32,13 +32,10 @@ return (
                 <Link to='/needhelp'>Statistics</Link>
               </li>
               <li>
-                <Link to='/needhelp'>Test Your Knowledge</Link>
-              </li>
-              <li>
                 <Link to='/needhelp'>Need Help</Link>
               </li>
               <li>
-                <Link to='/'>Contact Us</Link>
+                <Link to='/Contact'>Contact Us</Link>
               </li>
             </ul>
           </nav>

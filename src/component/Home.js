@@ -5,10 +5,10 @@ const Home = () => {
     return (
 
 
-            <div className='container-fluid'>
+            <div className='container-fluid HomeMain'>
                     <div className='row rowColor'>
                         <div className='col-lg-6 col-md-12 left-box'>
-                            
+
                             <br />
                             <br />
                             <br />
@@ -22,20 +22,16 @@ const Home = () => {
                             <br />
                             <br />
                             <br />
-                            
+
                         </div>
 
                         <div className='col-lg-6 col-md-12 right-box'>
                         <img className='image_corrona' src={corrona} alt="" />
-                        
+
                         </div>
 
                     </div>
-                    
-                <hr></hr>
 
-                    
-                    
             </div>
 
 

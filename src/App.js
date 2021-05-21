@@ -4,6 +4,7 @@ import Contact from './component/Contact'
 import  {BrowserRouter as Router,Switch,Route} from 'react-router-dom';
 import HomeComp from './component/HomeComp'
 import NeedHelp from './component/NeedHelp'
+import Quiz from './component/Quiz'
 
 
 
@@ -17,8 +18,9 @@ const App = () => {
             <Navbar />
             <Switch>
               <Route exact path="/" component={HomeComp} />
-              <Route path="/needhelp"  component={NeedHelp} />
-              <Route path="/contactus"  component={Contact} />
+              <Route path="/NeedHelp"  component={NeedHelp} />
+              <Route path="/Contact"  component={Contact} />
+              <Route path="/Quiz"  component={Quiz} />
           </Switch>
 
 
