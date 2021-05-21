@@ -29,9 +29,6 @@ return (
                 <Link to='/needhelp'>Statistics</Link>
               </li>
               <li>
-                <Link to='/quiz'>Test Your Knowledge</Link>
-              </li>
-              <li>
                 <Link to='/needhelp'>Need Help</Link>
               </li>
               <li>
