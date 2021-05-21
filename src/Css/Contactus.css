@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Pattaya&display=swap");
+
 .deep {
   height: 15rem;
   width: 15rem;
@@ -5,4 +7,20 @@
 
 .img-div {
   text-align: center;
+}
+.card_content {
+  padding-bottom: 7rem;
+  padding-top: 0.9rem;
+}
+.top {
+  background-color: #e4f9f5;
+}
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-family: "Pattaya", sans-serif;
+}
+
+@media (max-width: 766px) {
+  .card_content {
+  }
 }
