@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../Css/Quiz.css'
+
 const Quiz = () => {
 	const questions = [
 		{
