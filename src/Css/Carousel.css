@@ -12,6 +12,18 @@
   color: black;
 }
 
+.gc-c {
+  color: brown;
+}
+
+.covid-desc {
+  font-size: 0.9rem;
+}
+#carousel-sec {
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+}
+
 @media (max-width: 650px) {
   .img1 {
     height: 10rem;

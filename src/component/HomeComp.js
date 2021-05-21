@@ -6,8 +6,8 @@ import Carousel from './Carousel'
 const HomeComp = () => {
     return (
         <div>
-        <Home />
         <Carousel />
+        <Home />
         <Footer />
         </div>
     )
