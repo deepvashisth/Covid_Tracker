@@ -12,7 +12,7 @@ const NavigationBar = () => {
               <nav className="navbar navbar-expand-lg navbar-light bg">
     <div className="container-fluid">
           <Link to='/'>
-          <a className="navbar-brand" href="/">Covid Tracker</a>
+            <p>Covid Tracker</p>
           </Link>
      
       <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,7 +24,9 @@ const NavigationBar = () => {
           <ul>
 
               
-              <li><a href="/">Home</a></li>
+              <Link to='/'>
+                <li>Home</li>
+              </Link>
             
             
             <li><a href="/">Statistics</a></li>
@@ -33,8 +35,11 @@ const NavigationBar = () => {
             <Link to='/needhelp'>
               <li>Need Help</li>
             </Link>
-           
-            <li><a href="/Footer">contact us</a></li>
+            
+            <Link to='/contactus'>
+            <li>Contact us</li>
+            </Link>
+            
             
           </ul>
         </nav>
