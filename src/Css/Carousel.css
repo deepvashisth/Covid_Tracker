@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
 .main {
   padding-left: 100px;
   padding-right: 100px;
@@ -23,9 +25,92 @@
   padding-top: 4rem;
   padding-bottom: 2rem;
 }
+/* images */
+.mask {
+  height: 14rem;
+}
+.wash {
+  height: 15rem;
+}
 
-@media (max-width: 650px) {
+.social {
+  height: 15rem;
+}
+
+.btn-tab {
+  width: 85%;
+  margin: auto;
+}
+
+.btn {
+  display: inline-block;
+  background-color: brown;
+  color: #fff;
+  padding: 0.4rem 1.3rem;
+  font-size: 1rem;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  margin-top: 14vh;
+  outline: none;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+  border-radius: 2px;
+}
+
+.prevention {
+  text-align: center;
+  padding-bottom: 2rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.9rem;
+}
+
+.symprow img {
+  max-width: 50%;
+  margin-left: 5.3rem;
+}
+.symprow p {
+  text-align: center;
+  margin-top: 1.2rem;
+}
+
+/* media for the 1st carousel */
+
+@media (max-width: 1085px) {
+  .left-tab {
+    margin: auto;
+  }
+}
+
+@media (max-width: 969px) {
+  .right-tab {
+    margin-top: 3rem;
+  }
+}
+
+@media (max-width: 451px) {
+  .btn {
+    font-size: 0.9rem;
+  }
+
   .img1 {
+    height: 10rem !important;
+    padding-left: 0;
+  }
+  .mask {
     height: 10rem;
+  }
+  .wash {
+    height: 11rem;
+  }
+
+  .social {
+    height: 11rem;
+  }
+  .prevention {
+    text-align: center;
+    padding-bottom: 2rem;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2rem;
   }
 }
