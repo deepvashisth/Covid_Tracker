@@ -6,3 +6,10 @@
 .linkButton {
   color: white;
 }
+
+.btn_info{
+  background-color: brown;
+}
+.btn_info :hover{
+  color: black;
+}

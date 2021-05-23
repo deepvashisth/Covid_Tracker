@@ -36,13 +36,10 @@
 .social {
   height: 15rem;
 }
-
-.btn-tab {
-  width: 85%;
-  margin: auto;
+.morr :hover{
+  color: black;
 }
-
-.btn {
+.MoreInfo {
   display: inline-block;
   background-color: brown;
   color: #fff;
@@ -51,7 +48,7 @@
   text-align: center;
   border: none;
   cursor: pointer;
-  margin-left: 21.5rem;
+  margin-left: 24rem;
   margin-top: 14vh;
   outline: none;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
@@ -89,7 +86,7 @@
 }
 
 @media (max-width: 451px) {
-  .btn {
+  .MoreInfo {
     font-size: 0.9rem;
   }
 

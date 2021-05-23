@@ -43,8 +43,8 @@ return (
         </div>
         <div className='container'>
         <div className='row'>
-        <div className='col-lg-12 btn-tab col-md-12 col-sm-12'>
-        <a className='btn' href='https://www.medicalnewstoday.com/articles/256521#sars'>
+        <div className='morr col-lg-12  col-md-12 col-sm-12'>
+        <a className='MoreInfo' href='https://www.medicalnewstoday.com/articles/256521#sars'>
             Click here for more info
        </a>
         </div>
