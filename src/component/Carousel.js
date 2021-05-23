@@ -27,8 +27,8 @@ return (
   <div id="carouselExampleControls" className="carousel slide main" data-bs-ride="carousel">
     <div className="carousel-inner">
       <div className="carousel-item active">
-        <div className="container">
-        <div className="row">
+        <div className="container hello1">
+        <div className="row hello2">
           <div className="col-lg-6 left-tab col-md-12 col-sm-12">
           <img style={imgStyle} src={corona} className='img1' alt="" />
 

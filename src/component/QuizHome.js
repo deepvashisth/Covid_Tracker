@@ -5,6 +5,7 @@ import {Link} from "react-router-dom";
 const QuizHome = () => {
   return (
   <div className='QuizMain'>
+  
     <button type="button" class="btn btn-dark btn-lg download-button">
       <Link className="linkButton" to='/quiz'>Test Your Knowledge</Link>
     </button>

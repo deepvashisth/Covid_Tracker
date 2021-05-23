@@ -94,8 +94,9 @@
   }
 
   .img1 {
+    position: relative;
     height: 10rem !important;
-    padding-left: 0;
+    right: 4rem;
   }
   .mask {
     height: 10rem;
@@ -112,5 +113,11 @@
     padding-bottom: 2rem;
     font-family: "Roboto", sans-serif;
     font-size: 1.2rem;
+  }
+  .hello1 {
+  }
+  .hello2 {
+    position: relative;
+    right: 0.4rem;
   }
 }
