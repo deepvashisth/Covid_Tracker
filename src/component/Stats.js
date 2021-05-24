@@ -1,5 +1,5 @@
 import React, {useEffect,useState} from 'react'
-
+import '../Css/stats.css'
 
 const Stats = () => {
 
@@ -10,25 +10,25 @@ const Stats = () => {
         const actualData= await res.json();
         console.log(data.statewise);
         setData(actualData.statewise);
-        
+
     }
 
     useEffect(() => {
         getCovidData();
-        
+
     // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [ ]);
 
     return (
         <>
-            
+
             <div className="container-fluid mt-5">
                 <div className='main-heading'>
                     <h1 className='mb-5 text-center'><span className="font-weight-bold">India</span> COVID-19 Dashboard</h1>
                 </div>
 
                 <div className="table-responsive">
-                    <table className="table table-hover">
+                    <table className="table table-hover stats_Table">
                         <thead className='thead-dark'>
                             <tr>
                             <td>State</td>
@@ -37,7 +37,7 @@ const Stats = () => {
                             <td>Deaths</td>
                             <td>Active</td>
                             </tr>
- 
+
 
                         </thead>
 
@@ -55,13 +55,13 @@ const Stats = () => {
                                     )
                                 })
                             }
-                        
+
                         </tbody>
-                    
+
                     </table>
-                
+
                 </div>
-            </div> 
+            </div>
         </>
     )
 }
