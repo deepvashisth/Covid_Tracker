@@ -10,6 +10,11 @@
   height: 20rem;
 }
 
+.btnCenter{
+  margin-left:40%;
+  margin-top: 10vh;
+}
+
 .buttonColor {
   color: black;
 }
@@ -49,8 +54,6 @@
   text-align: center;
   border: none;
   cursor: pointer;
-  margin-left: 24rem;
-  margin-top: 14vh;
   outline: none;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
   border-radius: 2px;
@@ -117,5 +120,25 @@
   .hello2 {
     position: relative;
     right: 0.4rem;
+  }
+}
+@media (max-width: 991px) {
+  .btnCenter{
+    margin-left: 35%
+  }
+}
+@media (max-width: 950px) {
+  .btnCenter{
+    margin-left: 30%
+  }
+}
+@media (max-width: 650px) {
+  .btnCenter{
+    margin-left: 20%
+  }
+}
+@media (max-width: 480px) {
+  .btnCenter{
+    margin-left: 10%
   }
 }
