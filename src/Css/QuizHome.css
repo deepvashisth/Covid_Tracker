@@ -13,3 +13,10 @@
 .btn_info :hover{
   color: black;
 }
+.par {
+  font-family: "Montserrat", sans-serif;
+  color: #da4b4b;
+  font-weight: 690;
+  font-size: 3rem;
+  text-align: center;
+}

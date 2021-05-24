@@ -17,7 +17,7 @@ const Home = () => {
                             <h3>Lets get vaccinated together</h3>
                             <br></br>
                             <br></br>
-                            <button type="button" className="btn btn-dark btn-lg download-button">
+                            <button type="button" className="btn btn-dark btn-lg btn_info">
                             check Vaccine Avaibility    <i className="fas fa-clinic-medical"></i>  </button>
                             <br />
                             <br />
