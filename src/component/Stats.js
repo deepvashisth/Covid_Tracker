@@ -1,32 +1,69 @@
-import React, { Component } from 'react';
+import React, {useEffect,useState} from 'react'
 
 
+const Stats = () => {
 
-class Stats extends Component {
+    const [data,setData]=useState([]);
 
-    constructor() {
-        super();
-        this.state = {
-            stats :[
+    const getCovidData = async() => {
+        const res = await fetch("https://api.covid19india.org/data.json")
+        const actualData= await res.json();
+        console.log(data.statewise);
+        setData(actualData.statewise);
+        
+    }
+
+    useEffect(() => {
+        getCovidData();
+        
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [ ]);
+
+    return (
+        <>
+            
+            <div className="container-fluid mt-5">
+                <div className='main-heading'>
+                    <h1 className='mb-5 text-center'><span className="font-weight-bold">India</span> COVID-19 Dashboard</h1>
+                </div>
+
+                <div className="table-responsive">
+                    <table className="table table-hover">
+                        <thead className='thead-dark'>
+                            <tr>
+                            <td>State</td>
+                            <td>Confirmed</td>
+                            <td>Recovered</td>
+                            <td>Deaths</td>
+                            <td>Active</td>
+                            </tr>
+ 
+
+                        </thead>
+
+                        <tbody>
+                            {
+                                data.map((currElem,index) =>{
+                                    return (
+                                        <tr key={index}>
+                                            <td>{currElem.state}</td>
+                                            <td>{currElem.confirmed}</td>
+                                            <td>{currElem.recovered}</td>
+                                            <td>{currElem.deaths}</td>
+                                            <td>{currElem.active}</td>
+                                        </tr>
+                                    )
+                                })
+                            }
+                        
+                        </tbody>
+                    
+                    </table>
                 
-            ]
-        }
-    }
-
-componentDidMount() {
-    fetch('/api/stats')
-    .then(res => res.json())
-    .then(stats => this.setState({stats} , () => console.log('Stats Fetched ..',
-    stats)));
+                </div>
+            </div> 
+        </>
+    )
 }
 
-    render() {
-        return (
-            <div>
-                <h2>helo</h2>
-            </div>
-        );
-    }
-}
-
-export default Stats;
+export default Stats
