@@ -7,7 +7,9 @@ class Stats extends Component {
     constructor() {
         super();
         this.state = {
-            stats :[]
+            stats :[
+
+            ]
         }
     }
 
@@ -21,7 +23,7 @@ componentDidMount() {
     render() {
         return (
             <div>
-                <h2>stats</h2>
+                <h2>helo</h2>
             </div>
         );
     }
