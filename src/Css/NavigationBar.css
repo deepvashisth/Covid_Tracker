@@ -4,20 +4,20 @@
 .nav-items {
   margin-left: 62%;
 }
-#branding{
-   margin: 10px 20px;
-   font-size:1.5rem;
-   text-decoration:none;
-   color: green;
+#branding {
+  margin: 10px 20px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: green;
 }
-#branding :hover{
+#branding :hover {
   color: #fc5404;
 }
-p{
-  margin-bottom: 0;;
+p {
+  margin-bottom: 0;
 }
-a{
-  text-decoration:none;
+a {
+  text-decoration: none;
 }
 /* NAVIGATION */
 

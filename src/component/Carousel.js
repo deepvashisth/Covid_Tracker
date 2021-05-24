@@ -44,7 +44,7 @@ return (
         <div className='container'>
         <div className='row'>
         <div className='morr col-lg-12  col-md-12 col-sm-12'>
-        <a className='MoreInfo' href='https://www.medicalnewstoday.com/articles/256521#sars'>
+        <a className='MoreInfo' href='https://www.medicalnewstoday.com/articles/256521#sars' target="_blank" rel="noreferrer noopener">
             Click here for more info
        </a>
         </div>
