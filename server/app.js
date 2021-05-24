@@ -1,9 +1,32 @@
 const express = require("express");
 const app = express();
+const https=require('https')
+  
+
+const url="https://api.covid19india.org/data.json";
+
+let data= '';
+
+app.get('/api/stats', (req, res) => {
+  
+  https.get(url, function (resp) {
+    console.log(resp.statusCode)
+     
+
+     resp.on('data', (chunk) => {
+      data += chunk;
+    });
 
 
-app.get("/", (req, res) => {
-  res.send("Hello World!");
+  
+  })
+  
+  .on("error", (err) => {
+    console.log("Error: " + err.message);
+
+  });
+
+  res.json(data)
 });
 
 app.get('/QuizHelp',function(req,res){

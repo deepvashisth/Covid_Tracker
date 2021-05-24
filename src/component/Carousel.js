@@ -35,7 +35,7 @@ return (
 
           </div>
           <div className="col-lg-6  right-tab col-md-12 col-sm-12">
-          <h1>What is <span class="gc-c">Corona</span>Virus?</h1>
+          <h1>What is <span className="gc-c">Corona</span>Virus?</h1>
                   <p className='covid-desc'>Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus that attacks the respiratory track of a person. The COVID-19 virus spreads primarily through droplets of saliva or discharge from the nose when an infected person coughs or sneezes, so it’s important that you also practice respiratory etiquette (for example, by coughing into a flexed elbow). At this time, there are no specific vaccines or treatments for COVID-19. However, there are many ongoing clinical trials evaluating potential treatments.
                    </p>
           </div>
@@ -62,7 +62,7 @@ return (
 
       <div className="carousel-item">
         <div className="container">
-        <h4 className='prevention'>To prevent the spread of <span class='gc-c'>Corrona</span> virus</h4>
+        <h4 className='prevention'>To prevent the spread of <span className='gc-c'>Corrona</span> virus</h4>
         <div className="row">
 
           <div className="col-lg-4 col-md-6 col-sm-12">

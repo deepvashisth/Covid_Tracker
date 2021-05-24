@@ -129,11 +129,7 @@ const Quiz = () => {
 		<div className='quizTab'>
 			{showScore ? (
 				<div className='score-section'>
-					You scored {score} out of {questions.length}  <span class='cl-feed'>{feedback}</span>
-
-
-
-
+					You scored {score} out of {questions.length}  <span className='cl-feed'>{feedback}</span>
 				</div>
 			) : (
 				<>

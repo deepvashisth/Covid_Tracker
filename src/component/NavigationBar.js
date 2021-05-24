@@ -29,7 +29,7 @@ return (
                 <Link to="/">Home</Link>
               </li>
               <li>
-                <Link to='/needhelp'>Statistics</Link>
+                <Link to='/Statistics'>Statistics</Link>
               </li>
               <li>
                 <Link to='/needhelp'>Need Help</Link>
