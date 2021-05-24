@@ -8,7 +8,7 @@ class Stats extends Component {
         super();
         this.state = {
             stats :[
-
+                
             ]
         }
     }
