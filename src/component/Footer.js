@@ -3,10 +3,10 @@ import "../Css/Footer.css"
 const Footer = () => {
     return (
         <div className="head">
-        <footer class="footer">
+        <footer className="footer">
         <p style={{textAlign:'center',color:'#a01c1c'}}>Questions? Call 9870142745</p>
 
-        <div class="footer-cols">
+        <div className="footer-cols">
             <ul style={{maxHeight:'50%'}}>
                 <h6>About The project</h6>
                 <p>Lorem ipsum dolor sit amet, clit esse cillum dolore eu fugiat nul
@@ -39,7 +39,7 @@ const Footer = () => {
             
         </div>
         
-        <p className='github'> <a href="https://github.com/deepvashisth/Covid_Tracker">Fork this repo on Github</a> <i class="fab fa-github fa-2x"></i></p>
+        <p className='github'> <a href="https://github.com/deepvashisth/Covid_Tracker">Fork this repo on Github</a> <i className="fab fa-github fa-2x"></i></p>
         
     </footer>
     
