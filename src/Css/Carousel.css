@@ -37,7 +37,8 @@
   height: 15rem;
 }
 .morr :hover {
-  color: black;
+  background-color:  black;
+  color: white;
 }
 .MoreInfo {
   display: inline-block;

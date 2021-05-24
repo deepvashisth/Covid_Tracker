@@ -21,9 +21,11 @@ const QuizHome = () => {
                     <h1 className='par'>Quiz on Covid-19</h1>
                     <br></br>
                     <br></br>
+                    <Link className="linkButton" to='/quiz'>
                     <button type="button" className="btn btn-dark btn-lg btn_info">
                     Test Your Knowledge
                   </button>
+                  </Link>
                     <br />
                     <br />
                     <br />
