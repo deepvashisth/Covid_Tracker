@@ -5,6 +5,12 @@ const Stats = () => {
 
     const [data,setData]=useState([]);
 
+    useEffect(() => {
+        getCovidData();
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [ ]);
+
     const getCovidData = async() => {
         const res = await fetch("https://api.covid19india.org/data.json")
         const actualData= await res.json();
@@ -13,11 +19,7 @@ const Stats = () => {
 
     }
 
-    useEffect(() => {
-        getCovidData();
-
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [ ]);
+   
 
     return (
         <>
