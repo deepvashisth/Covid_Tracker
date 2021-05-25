@@ -1,5 +1,6 @@
 import '../Css/Home.css'
 import vaccine2 from '../images/vaccine2.jpeg'
+import {Link} from "react-router-dom";
 
 const Home = () => {
     return (
@@ -17,8 +18,11 @@ const Home = () => {
                             <h3>Lets get vaccinated together</h3>
                             <br></br>
                             <br></br>
+                            <Link  to='/vaccine'>
                             <button type="button" className="btn btn-dark btn-lg btn_info">
-                            check Vaccine Avaibility    <i className="fas fa-clinic-medical"></i>  </button>
+                            check Vaccine Avaibility <i className="fas fa-clinic-medical"></i>  </button>
+                            </Link>
+                            
                             <br />
                             <br />
                             <br />

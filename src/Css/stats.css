@@ -1,73 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+.text {
+  font-family: "Montserrat", sans-serif;
+}
+.text-span {
+  color: brown;
+}
+
 .stats_Table {
-    border-collapse: collapse;
-    margin: 25px 0;
-    font-size: 0.9em;
-    font-family: sans-serif;
-    min-width: 400px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-    margin-left: auto;
-    margin-right: auto;
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .stats_Table thead tr {
-    background-color: #009879;
-    color: #ffffff;
-    text-align: left;
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
 }
 
 .stats_Table th,
 .stats_Table td {
-    padding: 12px 15px;
+  padding: 12px 15px;
 }
 
 .stats_Table tbody tr {
-    border-bottom: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
 }
 
 .stats_Table tbody tr:nth-of-type(even) {
-    background-color: #f3f3f3;
+  background-color: #f3f3f3;
 }
 
 .stats_Table tbody tr:last-of-type {
-    border-bottom: 2px solid #009879;
+  border-bottom: 2px solid #009879;
 }
 
 .stats_Table tbody tr.active-row {
-    font-weight: bold;
-    color: #009879;
+  font-weight: bold;
+  color: #009879;
 }
-@media (max-width:550px) {
+@media (max-width: 550px) {
   .stats_Table {
-      border-collapse: collapse;
-      margin: 15px 0;
-      font-size: 0.8em;
-      font-family: sans-serif;
-      min-width: 350px;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-      margin-left: auto;
-      margin-right: auto;
+    border-collapse: collapse;
+    margin: 15px 0;
+    font-size: 0.8em;
+    font-family: sans-serif;
+    min-width: 350px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    margin-left: auto;
+    margin-right: auto;
   }
   .stats_Table th,
   .stats_Table td {
-      padding: 8px 10px;
+    padding: 8px 10px;
   }
 }
- @media (max-width: 413px){
-   .stats_Table{
-     font-size: 0.7rem;
-   }
-   .stats_Table th,
-   .stats_Table td {
-       padding: 5px 8px;
-   }
- }
- @media (max-width: 371px){
-   .stats_Table{
-     font-size: 0.6rem;
-     min-width: 200px;
-   }
-   .stats_Table th,
-   .stats_Table td {
-       padding: 2px 4px;
-   }
- }
+@media (max-width: 413px) {
+  .stats_Table {
+    font-size: 0.7rem;
+  }
+  .stats_Table th,
+  .stats_Table td {
+    padding: 5px 8px;
+  }
+}
+@media (max-width: 371px) {
+  .stats_Table {
+    font-size: 0.6rem;
+    min-width: 200px;
+  }
+  .stats_Table th,
+  .stats_Table td {
+    padding: 2px 4px;
+  }
+}
