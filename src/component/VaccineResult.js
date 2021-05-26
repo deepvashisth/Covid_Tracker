@@ -9,7 +9,6 @@ const VaccineResult = ({responseData,text}) => {
     return (
       <>
 
-
             <div className='container-fluid mt-4'>
             <h1 className='mb-4 text-center'>Your Area vaccine Data</h1>
             <div className="table-responsive">
@@ -56,7 +55,6 @@ const VaccineResult = ({responseData,text}) => {
                 </div>:<p>null</p>
             }
             </div>
-
 
         </>
     )
