@@ -8,6 +8,15 @@ const VaccineResult = ({responseData,text}) => {
 
     return (
       <>
+<<<<<<< HEAD
+            {
+
+                console.log(responseData.sessions)
+                
+            }
+            <h1>{text}</h1>
+
+=======
             
             <div className='container-fluid mt-4'>
             <h1 className='mb-4 text-center'>Your Area vaccine Data</h1>
@@ -57,6 +66,7 @@ const VaccineResult = ({responseData,text}) => {
             </div>
             
     
+>>>>>>> d7521483089da841398f95090562ef9e9061dad4
         </>
     )
 }
