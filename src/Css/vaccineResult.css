@@ -3,9 +3,6 @@
 .text {
   font-family: "Montserrat", sans-serif;
 }
-.text-span {
-  color: brown;
-}
 
 .vacine_Table {
   border-collapse: collapse;
@@ -14,8 +11,6 @@
   font-family: sans-serif;
   min-width: 400px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .vacine_Table thead tr {
@@ -45,38 +40,31 @@
   font-weight: bold;
   color: #009879;
 }
-@media (max-width: 550px) {
-  .vacine_Table {
-    border-collapse: collapse;
-    margin: 15px 0;
-    font-size: 0.8em;
-    font-family: sans-serif;
-    min-width: 350px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .vacine_Table th,
-  .vacine_Table td {
-    padding: 8px 10px;
-  }
-}
-@media (max-width: 413px) {
-  .vacine_Table {
+@media (max-width: 940px) {
+  .vacine_Table{
     font-size: 0.7rem;
   }
   .vacine_Table th,
   .vacine_Table td {
-    padding: 5px 8px;
+    padding: 9px 12px;
   }
 }
-@media (max-width: 371px) {
-  .vacine_Table {
-    font-size: 0.6rem;
-    min-width: 200px;
+@media (max-width: 756px) {
+  .vacine_Table{
+    font-size: 0.7rem;
   }
   .vacine_Table th,
   .vacine_Table td {
-    padding: 2px 4px;
+    padding: 6px 8px;
+  }
+}
+@media (max-width: 608px) {
+  .vacine_Table{
+    font-size: 0.6rem;
+    margin: 15px 0;
+  }
+  .vacine_Table th,
+  .vacine_Table td {
+    padding: 5px 6px;
   }
 }
