@@ -1,23 +1,15 @@
-
+import '../Css/vaccineResult.css'
 import React from 'react'
 
 const VaccineResult = ({responseData,text}) => {
     return (
       <>
-<<<<<<< HEAD
-            {
 
-                console.log(responseData.sessions)
-                
-            }
-            <h1>{text}</h1>
 
-=======
-            
             <div className='container-fluid mt-4'>
             <h1 className='mb-4 text-center'>Your Area vaccine Data</h1>
             <div className="table-responsive">
-                    <table className="table table-hover stats_Table">
+                    <table className="table table-hover vacine_Table">
                         <thead className='thead-dark'>
                             <tr>
                             <td>Name</td>
@@ -59,9 +51,8 @@ const VaccineResult = ({responseData,text}) => {
 
                 </div>
             </div>
-            
-    
->>>>>>> d7521483089da841398f95090562ef9e9061dad4
+
+
         </>
     )
 }
