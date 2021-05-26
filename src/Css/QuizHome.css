@@ -1,22 +1,37 @@
 .QuizMain {
-  padding-top: 8%;
-  padding-bottom: 15%;
+  margin-top: 9%;
+  padding-bottom: 7%;
+
   text-align: center;
+  background-color: #e4efe7;
 }
+
+.imageQuiz {
+  height: 90%;
+  width: 90%;
+}
+
 .linkButton {
   color: white;
 }
 
-.btn_info{
+.btn_info {
   background-color: brown;
 }
-.btn_info :hover{
+.btn_info :hover {
   color: white;
 }
 .par {
   font-family: "Montserrat", sans-serif;
   color: #da4b4b;
-  font-weight: 690;
-  font-size: 3rem;
+  font-weight: 600;
+  font-size: 2.7rem;
   text-align: center;
+}
+
+.rightbox {
+  margin-top: 25vh;
+}
+.leftbox {
+  margin-top: 12vh;
 }

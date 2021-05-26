@@ -11,6 +11,7 @@ import Vaccine from './component/Vaccine'
 
 
 
+
 const App = () => {
 
 
@@ -25,6 +26,7 @@ const App = () => {
               <Route path="/Quiz"  component={Quiz} />
               <Route path="/Statistics"  component={Stats} />
               <Route path="/vaccine"  component={Vaccine} />
+            
               
           </Switch>
 
