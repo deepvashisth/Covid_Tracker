@@ -22,7 +22,7 @@ const Vaccine = () => {
  
             axios.get('https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/findByPin?pincode='+pin+'&date='+formatDate(date))
             .then((response) => {
-            setResponseData(response.data)
+            setResponseData(response.data.sessions)
             
           
   });
