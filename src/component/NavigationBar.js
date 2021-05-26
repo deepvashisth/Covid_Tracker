@@ -1,6 +1,6 @@
 import "../Css/NavigationBar.css"
 import {Link} from "react-router-dom";
-
+import logo from '../images/logo2.png'
 
 
 
@@ -14,8 +14,8 @@ return (
 <div>
   <nav className="navbar navbar-expand-lg navbar-light bg">
     <div className="container-fluid">
-      <Link id="branding" to='/'>
-      <p href="/">Covid Tracker</p>
+      <Link  to='/'>
+      <img style={{height: '4.9rem'}} src={logo} alt="" />
       </Link>
 
       <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">

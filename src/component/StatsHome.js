@@ -7,18 +7,22 @@ import {Link} from "react-router-dom";
 const StatsHome = () => {
     return (
         <div className='container-fluid stats-main'>
-            <div className='row d-flex'>
-                <div className="col-lg-9 col-md-12 left-box">
+            <div className='row '>
+                <div className="col-lg-7 col-md-12 left-box">
                 <img className='stats-img' src={stats} alt="" />
                 </div>
 
-                <div className="col-lg-3 col-md-12 right-box text-center">
+                <div className="col-lg-5 col-md-12 right-box text-center">
+
+                <h1 className='h1Stats'>Check <span className='gc-c'>stateWise</span> stats here!</h1>
                 
                 <Link to='/Statistics'>
-                <h1 className='h1Stats'>check stateWise stats her!</h1>
+               
+                <br></br>
                     <button type="button" className="btn  btn-stats btn-danger">
-                    Test Your Knowledge
-                  </button>
+                    Live Stats
+                    &nbsp; <i class="fas fa-chart-line "> </i>
+                    </button>
                   </Link>
                 </div>
             

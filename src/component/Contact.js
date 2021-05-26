@@ -10,12 +10,14 @@ const Contact = () => {
     backgroundColor: '#e4efe7'
   };
 
+ 
+
   return (<div className='top'>
     <br></br>
     <h1 style={{
         textAlign: 'center',
-        color: '#66BFBF'
-      }}>Meet our Hardworking team
+        
+      }}>Meet our <span className='gc-c'>Hardworking  </span>team
     </h1>
     <br></br>
 
@@ -29,7 +31,7 @@ const Contact = () => {
               <h5 className="card-title">Deep Vashisth</h5>
               <p className="card-text">
                 <div>
-                <a href='mailto:deepvashisth7777@gmail.com'>Gmail <i class="fas fa-envelope"></i></a><br />
+                <a  href='mailto:deepvashisth7777@gmail.com'>Gmail <i class="fas fa-envelope"></i></a><br />
                 <a href='https://www.linkedin.com/in/deep-vashisth-a71365154/' target="_blank" rel="noreferrer noopener">Linkedin <i class="fab fa-linkedin"></i></a><br />
                 <a href='https://github.com/deepvashisth' target="_blank" rel="noreferrer noopener">Github <i class="fab fa-github"></i></a>
               </div>

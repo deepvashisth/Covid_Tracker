@@ -16,11 +16,11 @@ const QuizHome = () => {
                 <div className='col-lg-6 col-md-12 justify-content-center rightbox'>
 
                     
-                    <h1 className='par'>Take a Quiz on covid</h1>
+                    <h1 className='par'>Take a <span className='gc-c'>Quiz</span> on covid</h1>
                     <br></br>
                     
                     <Link className="linkButton" to='/quiz'>
-                    <button type="button" className="btn btn-dark btn-lg btn_info">
+                    <button type="button" className="btn btn-dark btn-lg btn-info">
                     Test Your Knowledge
                   </button>
                   </Link>
