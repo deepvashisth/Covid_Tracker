@@ -4,13 +4,21 @@
   height: 15rem;
   width: 15rem;
 }
+.foot{
+  background-color: #e4efe7;
+  text-align: center;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+}
+.card_d{
+  display: flex;
+}
 
 .img-div {
   text-align: center;
 }
 .card_content {
-  padding-bottom: 7rem;
-  padding-top: 0.9rem;
+  padding-bottom: 2.1rem;
 }
 .top {
   background-color: white;
