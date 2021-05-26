@@ -2,12 +2,16 @@
 import React from 'react'
 
 const VaccineResult = ({responseData,text}) => {
+   
+        
+    
+
     return (
       <>
             
             <div className='container-fluid mt-4'>
             <h1 className='mb-4 text-center'>Your Area vaccine Data</h1>
-            <div className="table-responsive">
+        {responseData.length>0?<div className="table-responsive">
                     <table className="table table-hover stats_Table">
                         <thead className='thead-dark'>
                             <tr>
@@ -48,7 +52,8 @@ const VaccineResult = ({responseData,text}) => {
 
                     </table>
 
-                </div>
+                </div>:<p>null</p>
+            }
             </div>
             
     
