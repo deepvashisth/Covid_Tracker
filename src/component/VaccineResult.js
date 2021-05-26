@@ -2,6 +2,10 @@ import '../Css/vaccineResult.css'
 import React from 'react'
 
 const VaccineResult = ({responseData,text}) => {
+
+
+
+
     return (
       <>
 
@@ -49,7 +53,8 @@ const VaccineResult = ({responseData,text}) => {
 
                     </table>
 
-                </div>
+                </div>:<p>null</p>
+            }
             </div>
 
 
