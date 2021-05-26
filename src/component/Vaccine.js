@@ -1,18 +1,14 @@
-
+import VaccineResult from './VaccineResult'
 import React, {useState} from 'react'
 import axios from 'axios'
 const Vaccine = () => {
     const [pin,setPin]=useState([]);
     const [date,setDate]=useState([]);
+    //use to show the div
+    const [show,setShow]=useState(false)
+    const [responseData,setResponseData]=useState([]);
 
-        // const divStyle={
-        //     backgroundColor:"#DFDCE3"
-        // }
-        
-
-        
-
-        function formatDate (input) {
+    const  formatDate = (input) => {
             var datePart = input.match(/\d+/g),
             year = datePart[0].substring(2), // get only two digits
             month = datePart[1], day = datePart[2];
@@ -21,29 +17,26 @@ const Vaccine = () => {
 }
     
 
- // Async function to send the data to the backend
-    async function postData() {
-            // Data object to be sent to the api endpoint
-          
-
+ 
+     function postData() {
+ 
             axios.get('https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/findByPin?pincode='+pin+'&date='+formatDate(date))
             .then((response) => {
-                console.log(response.data);
-
-                
-                
+            setResponseData(response.data)
+            
+          
   });
-            
-           
-    
 
-            
+
     }
+
 
     const handleSubmit = (e) => {
         e.preventDefault()
         postData()
     }
+
+    
     
     return (
         <>
@@ -79,13 +72,28 @@ const Vaccine = () => {
                        
                     </div>
                     
-                    <button type="submit" className="btn btn-primary">Submit</button>
+                    <button type="submit" className="btn btn-primary" onClick={() =>setShow(true)} >Submit</button>
+                    
                     
                 </form>
+              
                 <br></br>
+
+                <button type="submit" className="btn btn-danger" onClick={() =>setShow(false)} >Reset</button>
+            
                 </div>
             </div>
             </div>
+
+        <div className='container-fluid mt-2'>
+       {
+
+        show?<VaccineResult responseData={responseData}  text="hello"/>:null
+
+
+       }     
+        </div>
+
         </>
     )
 }
