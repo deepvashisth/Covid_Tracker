@@ -6,7 +6,7 @@ import logo from '../images/logo2.png'
 
 const NavigationBar = () => {
 
-  
+
 
 return (
 
@@ -37,7 +37,15 @@ return (
                 <Link to="/">Home</Link>
               </li>
               <li>
-                <Link to='/Statistics'>Statistics</Link>
+
+                  <a className="dropdown-toggle" href="/" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                    Statistics
+                  </a>
+
+                  <ul className="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li><Link to='/IndiaStats'>India Statistics</Link></li>
+                    <li><Link to='/WorldHomeStats'>World Statistics</Link></li>
+                  </ul>
               </li>
               <li>
                 <Link to='/needhelp'>Need Help</Link>
