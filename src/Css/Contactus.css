@@ -1,31 +1,52 @@
-@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
-
-.deep {
-  height: 15rem;
-  width: 15rem;
-}
-.foot {
-  background-color: #e4efe7;
-  text-align: center;
-  padding-top: 2vh;
-  padding-bottom: 2vh;
-}
-.card_d {
-  display: flex;
+.main-contact {
+  background-color: #fff7f9;
+  margin-top: 0;
 }
 
-.img-div {
+.name {
+  color: #2596a9;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 270px;
+  height: 270px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
   text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
-.card_content {
-  padding-bottom: 2.1rem;
+.m {
+  margin-left: auto;
+  margin-right: auto;
 }
-.top {
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
   background-color: white;
+  color: black;
 }
-h1 {
-  font-family: "PT Sans", sans-serif;
-}
-a {
-  color: #8c1c4f;
+.flip-card-back {
+  background-color: white;
+  color: black;
+  transform: rotateY(180deg);
 }
