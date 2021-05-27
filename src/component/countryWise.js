@@ -26,7 +26,7 @@ const Stats = () => {
 
             <div className="container-fluid mt-5">
                 <div className='main-heading'>
-                    <h1 className='mb-5 text-center text'>State-wise <span className='text-span'>COVID-19</span> Statistics</h1>
+                    <h1 className='mb-5 text-center text'>Country-wise <span className='text-span'>COVID-19</span> Statistics</h1>
                 </div>
 
                 <div className="table-responsive">

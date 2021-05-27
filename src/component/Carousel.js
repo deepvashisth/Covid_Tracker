@@ -47,10 +47,12 @@ return (
           </div>
           <div className='container btnCenter'>
             <div className='row'>
-              <div className='morr col-lg-12  col-md-12 col-sm-12'>
-                <a className='MoreInfo' href='https://www.medicalnewstoday.com/articles/256521#sars' target="_blank" rel="noreferrer noopener">
-                  Click here for more info
-                </a>
+              <div className='col-lg-12  col-md-12 col-sm-12'>
+
+              <a href='https://www.medicalnewstoday.com/articles/256521#sars' target="_blank" rel="noreferrer noopener">
+              <button type="button" className="btn btn-dark btn-lg btn_info">
+                Click here for more info
+              </button></a>
               </div>
             </div>
           </div>
@@ -64,7 +66,7 @@ return (
 
               <div className="col-lg-4 col-md-4 col-sm-12 mask-div">
                 <img src={mask}  alt="" />
-                
+
                <br></br>
               <p className='mb-5 text-center'>Wear mask</p>
               </div>
@@ -75,7 +77,7 @@ return (
                 <p className='text-center'> Wash your hand Regularly</p>
               </div>
 
-              <div className="col-lg-4 col-md-4 mt-4 col-sm-12 ">
+              <div className="col-lg-4 col-md-4 mt-4 col-sm-12">
                 <img src={social} alt="" />
                 <p className='text-center'> Maintain Social Distancing</p>
               </div>
@@ -85,7 +87,7 @@ return (
           </div>
         </div>
         <div className="carousel-item ">
-          
+
           <div  className="container-fluid mainSymp">
           <h4 className='text-center mb-5'>Symptoms of <span className='gc-c'>Covid-19</span></h4>
             <div className="row symprow ">
@@ -106,7 +108,7 @@ return (
           </div>
           <br></br>
           <br></br>
-          
+
 
 
         </div>
