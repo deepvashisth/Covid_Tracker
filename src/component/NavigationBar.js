@@ -43,7 +43,7 @@ return (
                   </a>
 
                   <ul className="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                    <li><Link to='/IndiaStats'>India Statistics</Link></li>
+                    <li className='statsLi'><Link to='/IndiaStats'>India Statistics</Link></li>
                     <li><Link to='/WorldHomeStats'>World Statistics</Link></li>
                   </ul>
               </li>

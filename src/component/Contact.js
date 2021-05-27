@@ -89,7 +89,7 @@ const Contact = () => {
             <div className='flip-card-body'>
               
               <p className='mt-3 h6 name'>Ashish Chauhan</p>
-              <p className='mt-3' >Mern Stack Developer</p>
+              <p className='mt-3' >front-end Developer</p>
             </div>
           </div>
 

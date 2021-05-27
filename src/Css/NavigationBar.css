@@ -4,12 +4,6 @@
 .nav-items {
   margin-left: 62%;
 }
-#branding {
-  margin: 10px 20px;
-  font-size: 1.5rem;
-  text-decoration: none;
-  color: green;
-}
 
 p {
   margin-bottom: 0;
@@ -61,6 +55,7 @@ nav.shift ul li :after {
   opacity: 0;
   z-index: -1;
 }
+
 nav.shift ul li :hover:after {
   opacity: 1;
   visibility: visible;
