@@ -1,12 +1,16 @@
 import VaccineResult from './VaccineResult'
 import React, {useState} from 'react'
 import axios from 'axios'
+
+
+
 const Vaccine = () => {
     const [pin,setPin]=useState([]);
     const [date,setDate]=useState([]);
     //use to show the div
     const [show,setShow]=useState(false)
     const [responseData,setResponseData]=useState([]);
+   
     
 
     const  formatDate = (input) => {
@@ -26,8 +30,11 @@ const Vaccine = () => {
             setResponseData(response.data.sessions)
             
           
-  });
-
+  }).catch(error =>{
+      console.log(error)
+      
+  })
+  
 
     }
 
@@ -89,10 +96,13 @@ const Vaccine = () => {
         <div className='container-fluid mt-2'>
        {
 
+        
         show?<VaccineResult responseData={responseData}  text="hello"/>:null
 
+        
 
-       }     
+       }
+           
         </div>
 
         </>

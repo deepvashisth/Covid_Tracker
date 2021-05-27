@@ -12,7 +12,7 @@ const VaccineResult = ({responseData,text}) => {
             <div className='container-fluid mt-4 '>
             <h1 className='mb-4 text-center'>Your Area vaccine Data</h1>
            
-            {responseData.length > 0? <div className="table-responsive">
+            {responseData.length > 0?<div className="table-responsive">
 
                     <table className="table table-hover vacine_Table">
                         <thead className='thead-dark'>

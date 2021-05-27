@@ -1,39 +1,35 @@
 import "../Css/Footer.css"
+import {Link} from "react-router-dom";
 
 const Footer = () => {
     return (
-        <div className="head">
-        <footer className="footer">
-        <p style={{textAlign:'center',color:'#a01c1c'}}>Questions? Call 9870142745</p>
+       
+        <footer  className="footer bg-dark">
+       
 
         <div className="footer-cols">
-            <ul style={{maxHeight:'50%'}}>
+            <ul>
                 <h6>About The project</h6>
-                <p>Lorem ipsum dolor sit amet, clit esse cillum dolore eu fugiat nul
-                la pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui offici
-                a deserunt mollit anim id est laborum.</p>
+                <p>This project is made to track Coronavirus statistics all over the world and state-wise India statistics 
+                people will get a brief knowledge about coronavirus by giving the quiz and you can also check the vaccine
+                availability by entering their respective Pincode followed by a date 
+                </p>
                 
             </ul>
-            <ul>
-                <h6>Lorem</h6>
-                <li><a href="/">Help Center</a></li>
-                <li><a href="/">Stats</a></li>
-                <li><a href="/">Terms Of Use</a></li>
-                <li><a href="/">Contact Us</a></li>
+           
+            <ul className='services-guidelines'>
+                <h6>Services</h6>
+                <li><Link to='/IndiaStats'>India Statistics</Link></li>
+                <li><Link to='/WorldHomeStats'>World Statistics</Link></li>
+                <li><Link to='/vaccine'>Vaccine Availability</Link></li>
+                <li><Link to='/Quiz'>Test Your Knowledge</Link></li>
             </ul>
-            <ul>
-                <h6>Epsom</h6>
-                <li><a href="/">Account</a></li>
-                <li><a href="/">Redeem Gift Cards</a></li>
-                <li><a href="/">Privacy</a></li>
-                <li><a href="/">Speed Test</a></li>
-            </ul>
-            <ul>
-                <h6>Guidlines</h6>
-                <li><a href="/">Media Center</a></li>
-                <li><a href="/">Buy Gift Cards</a></li>
-                <li><a href="/">Cookie Preferences</a></li>
-                <li><a href="/">Legal Notices</a></li>
+            <ul className='services-guidelines'>
+                <h6>Quick Links</h6>
+                <li><a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019" target="_blank" rel="noreferrer noopener">WHO Guidelines</a></li>
+                <li><a href="https://www.medicalnewstoday.com/articles/256521">Article</a></li>
+                <li><a href="https://www.medicalnewstoday.com/articles/coronavirus-testing">Covid Testing article</a></li>
+                <li><a href="https://www.mygov.in/covid-19">Govt of India</a></li>
             </ul>
 
             
@@ -43,7 +39,7 @@ const Footer = () => {
         
     </footer>
     
-        </div>
+       
     )
 }
 
