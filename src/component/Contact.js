@@ -62,9 +62,7 @@ const Contact = () => {
           </div>
 
           <div 
-          className='flip-card-back' 
-         
-          > 
+          className='flip-card-back'> 
           <div className='flip-card-back-body'>
           <p style={{paddingTop:'2.6rem',fontWeight:'660'}} className='h6 '>Avadhesh kr singh</p>
           <div className='mt-4 '>

@@ -19,14 +19,14 @@ const StatsHome = () => {
                 <br></br>
                 <Link to='/IndiaStats'>
                   <button type="button" className="btn btn-dark btn-lg btn_info">
-                  India Stats &nbsp;<i class="fas fa-chart-line "></i>  </button>
+                  India Stats &nbsp;<i className="fas fa-chart-line "></i>  </button>
 
                   </Link>
                   <br></br>
                   <br></br>
                   <Link to='/WorldHomeStats'>
                     <button type="button" className="btn btn-dark btn-lg btn_info">
-                    Country Stats &nbsp;<i class="fas fa-chart-line "></i>  </button>
+                    Country Stats &nbsp;<i className="fas fa-chart-line "></i>  </button>
 
                     </Link>
                 </div>
