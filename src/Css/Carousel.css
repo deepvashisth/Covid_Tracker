@@ -6,12 +6,35 @@
   padding-top: 10px;
   padding-bottom: 10px;
 }
+
+.preventrow,
+.symprow p {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 640;
+}
+
+/* images */
 .img1 {
   height: 20rem;
 }
 
-.btnCenter{
-  margin-left:40%;
+.symprow img {
+  height: 10rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.preventrow img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 12rem;
+}
+
+.btnCenter {
+  margin-left: 40%;
   margin-top: 10vh;
 }
 
@@ -30,19 +53,9 @@
   padding-top: 4rem;
   padding-bottom: 2rem;
 }
-/* images */
-.mask {
-  height: 14rem;
-}
-.wash {
-  height: 15rem;
-}
 
-.social {
-  height: 15rem;
-}
 .morr :hover {
-  background-color:  black;
+  background-color: black;
   color: white;
 }
 .MoreInfo {
@@ -66,17 +79,6 @@
   font-size: 1.9rem;
 }
 
-.symprow img {
-  max-width: 50%;
-  margin-left: 5.3rem;
-}
-.symprow p {
-  text-align: center;
-  margin-top: 1.2rem;
-}
-
-/* media for the 1st carousel */
-
 @media (max-width: 1085px) {
   .left-tab {
     margin: auto;
@@ -99,15 +101,16 @@
     height: 10rem !important;
     right: 4rem;
   }
-  .mask {
-    height: 10rem;
+
+  .preventrow img {
+    height: 9rem;
   }
-  .wash {
-    height: 11rem;
+  .symprow img {
+    height: 9rem;
   }
 
   .social {
-    height: 11rem;
+    height: 5rem;
   }
   .prevention {
     text-align: center;
@@ -115,30 +118,33 @@
     font-family: "Roboto", sans-serif;
     font-size: 1.2rem;
   }
-  .hello1 {
-  }
+
   .hello2 {
     position: relative;
     right: 0.4rem;
   }
 }
+
+/* media for 2nd carosel */
+
+/* 1st carosel btn */
 @media (max-width: 991px) {
-  .btnCenter{
-    margin-left: 35%
+  .btnCenter {
+    margin-left: 35%;
   }
 }
 @media (max-width: 950px) {
-  .btnCenter{
-    margin-left: 30%
+  .btnCenter {
+    margin-left: 30%;
   }
 }
 @media (max-width: 650px) {
-  .btnCenter{
-    margin-left: 20%
+  .btnCenter {
+    margin-left: 20%;
   }
 }
 @media (max-width: 480px) {
-  .btnCenter{
-    margin-left: 10%
+  .btnCenter {
+    margin-left: 10%;
   }
 }

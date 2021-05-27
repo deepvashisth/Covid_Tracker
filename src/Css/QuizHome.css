@@ -15,15 +15,9 @@
   color: white;
 }
 
-.btn_info {
-  background-color: brown;
-}
-.btn_info :hover {
-  color: white;
-}
 .par {
   font-family: "Montserrat", sans-serif;
-  color: #da4b4b;
+  color: #000;
   font-weight: 600;
   font-size: 2.7rem;
   text-align: center;
@@ -34,4 +28,11 @@
 }
 .leftbox {
   margin-top: 12vh;
+}
+.btn_info {
+  background-color: brown;
+}
+
+.btn_info:hover {
+  color: white;
 }
