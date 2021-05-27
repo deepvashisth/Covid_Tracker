@@ -10,13 +10,13 @@ const Contact = () => {
     backgroundColor: '#e4efe7'
   };
 
- 
+
 
   return (<div className='top'>
     <br></br>
     <h1 style={{
         textAlign: 'center',
-        
+
       }}>Meet our <span className='gc-c'>Hardworking  </span>team
     </h1>
     <br></br>

@@ -6,7 +6,7 @@ import logo from '../images/logo2.png'
 
 const NavigationBar = () => {
 
-  
+
 
 return (
 
@@ -14,7 +14,7 @@ return (
 <div>
   <nav className="navbar navbar-expand-lg navbar-light bg">
     <div className="container-fluid">
-      <Link  to='/'>
+      <Link to='/'>
       <img style={{height: '4.9rem'}} src={logo} alt="" />
       </Link>
 
@@ -29,7 +29,15 @@ return (
                 <Link to="/">Home</Link>
               </li>
               <li>
-                <Link to='/Statistics'>Statistics</Link>
+
+                  <a class="dropdown-toggle" href="/" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                    Statistics
+                  </a>
+
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li><Link to='/IndiaStats'>India Statistics</Link></li>
+                    <li><Link to='/WorldHomeStats'>World Statistics</Link></li>
+                  </ul>
               </li>
               <li>
                 <Link to='/needhelp'>Need Help</Link>
