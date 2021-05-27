@@ -16,13 +16,19 @@ const StatsHome = () => {
 
                 <h1 className='h1Stats'>Check <span className='gc-c'>stateWise</span> stats here!</h1>
 
-                <Link to='/IndiaStats'>
-
                 <br></br>
+                <Link to='/IndiaStats'>
                   <button type="button" className="btn btn-dark btn-lg btn_info">
-                  Live Stats &nbsp;<i class="fas fa-chart-line "></i>  </button>
+                  India Stats &nbsp;<i class="fas fa-chart-line "></i>  </button>
 
                   </Link>
+                  <br></br>
+                  <br></br>
+                  <Link to='/WorldHomeStats'>
+                    <button type="button" className="btn btn-dark btn-lg btn_info">
+                    Country Stats &nbsp;<i class="fas fa-chart-line "></i>  </button>
+
+                    </Link>
                 </div>
 
             </div>
