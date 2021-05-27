@@ -15,16 +15,24 @@ return (
   <nav className="navbar navbar-expand-lg navbar-light bg">
     <div className="container-fluid">
       <Link  to='/'>
-      <img style={{height: '4.9rem'}} src={logo} alt="" />
+      
+      <img style={{height: '4rem',position:'relative',left:'1.5rem'}} src={logo} alt="CovidTracker"  />
+      
       </Link>
 
       <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
       </button>
+
+      
+      
+      
+
       <div className="collapse navbar-collapse " id="navbarTogglerDemo02">
         <ul className="navbar-nav ms-auto">
           <nav className='shift'>
             <ul>
+            
               <li>
                 <Link to="/">Home</Link>
               </li>
@@ -38,6 +46,8 @@ return (
                 <Link to='/Contact'>Contact Us</Link>
               </li>
             </ul>
+
+              
           </nav>
         </ul>
       </div>
