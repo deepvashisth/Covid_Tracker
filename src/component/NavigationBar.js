@@ -30,11 +30,11 @@ return (
               </li>
               <li>
 
-                  <a class="dropdown-toggle" href="/" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                  <a className="dropdown-toggle" href="/" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                     Statistics
                   </a>
 
-                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <ul className="dropdown-menu" aria-labelledby="dropdownMenuLink">
                     <li><Link to='/IndiaStats'>India Statistics</Link></li>
                     <li><Link to='/WorldHomeStats'>World Statistics</Link></li>
                   </ul>

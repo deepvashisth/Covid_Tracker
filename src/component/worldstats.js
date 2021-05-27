@@ -18,14 +18,14 @@ const Stats = () => {
 
   }
 
-  return ( < div className = "container-fluid mt-5" > <div className='main-heading'>
+  return (< div className = "container-fluid mt-5" > <div className='main-heading'>
     <h1 className='mb-5 text-center text'>World Total
       <span className='text-span'>COVID-19</span>
       Statistics</h1>
   </div>
-  <div class="container">
-    <div class="row borr">
-      <div class="col-sm bor">
+  <div className="container">
+    <div className="row borr">
+      <div className="col-sm bor">
         <div>
           <div>
             <h3>Total Confirmed</h3>
@@ -33,7 +33,7 @@ const Stats = () => {
           <h2>{data.TotalConfirmed}</h2>
         </div>
       </div>
-      <div class="col-sm bor">
+      <div className="col-sm bor">
         <div>
           <div>
             <h3>Total Deaths</h3>
@@ -41,7 +41,7 @@ const Stats = () => {
           <h2>{data.TotalDeaths}</h2>
         </div>
       </div>
-      <div class="col-sm bor">
+      <div className="col-sm bor">
         <div>
           <div>
             <h3>Total Recovered</h3>
