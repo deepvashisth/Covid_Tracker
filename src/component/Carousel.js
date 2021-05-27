@@ -75,7 +75,7 @@ return (
                 <p className='text-center'> Wash your hand Regularly</p>
               </div>
 
-              <div className="col-lg-4 col-md-4 mt-4 col-sm-12 social-div">
+              <div className="col-lg-4 col-md-4 mt-4 col-sm-12 ">
                 <img src={social} alt="" />
                 <p className='text-center'> Maintain Social Distancing</p>
               </div>
