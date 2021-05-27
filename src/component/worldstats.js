@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import '../Css/Worldstats.css'
 
-const Stats = () => {
+const WorldStats = () => {
 
   const [data, setData] = useState([]);
 
@@ -18,7 +18,8 @@ const Stats = () => {
 
   }
 
-  return (< div className = "container-fluid mt-5" > <div className='main-heading'>
+  return (
+    <div className = "container-fluid mt-5"> <div className='main-heading'>
     <h1 className='mb-5 text-center text'>World Total
       <span className='text-span'>COVID-19</span>
       Statistics</h1>
@@ -50,8 +51,8 @@ const Stats = () => {
         </div>
       </div>
     </div>
-  </div> < /div>
+  </div> </div>
 )
 }
 
-export default Stats
+export default WorldStats;

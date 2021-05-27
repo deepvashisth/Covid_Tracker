@@ -1,10 +1,10 @@
-import WorldStats from  './worldstats'
-import CountryWise from  './countryWise'
+import Worldstats from './WorldStats'
+import CountryWise from  './CountryWise'
 
 const WorldHomeStats = () => {
     return (
         <div>
-        <WorldStats />
+        <Worldstats />
         <CountryWise />
         </div>
     )

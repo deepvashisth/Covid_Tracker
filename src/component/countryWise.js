@@ -1,7 +1,7 @@
 import React, {useEffect,useState} from 'react'
 import '../Css/stats.css'
 
-const Stats = () => {
+const CountryWise = () => {
 
     const [data,setData]=useState([]);
 
@@ -69,4 +69,4 @@ const Stats = () => {
     )
 }
 
-export default Stats
+export default CountryWise
