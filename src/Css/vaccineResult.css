@@ -41,7 +41,7 @@
   color: #009879;
 }
 @media (max-width: 940px) {
-  .vacine_Table{
+  .vacine_Table {
     font-size: 0.7rem;
   }
   .vacine_Table th,
@@ -50,7 +50,7 @@
   }
 }
 @media (max-width: 756px) {
-  .vacine_Table{
+  .vacine_Table {
     font-size: 0.7rem;
   }
   .vacine_Table th,
@@ -59,7 +59,7 @@
   }
 }
 @media (max-width: 608px) {
-  .vacine_Table{
+  .vacine_Table {
     font-size: 0.6rem;
     margin: 15px 0;
   }

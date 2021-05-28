@@ -8,6 +8,7 @@ import Quiz from './component/Quiz'
 import IndiaStats from './component/Stats'
 import Vaccine from './component/Vaccine'
 import WorldHomeStats from './component/WorldHomeStats'
+import Medicine from './component/Medicine'
 
 
 
@@ -28,6 +29,8 @@ const App = () => {
               <Route path="/IndiaStats"  component={IndiaStats} />
               <Route path="/vaccine"  component={Vaccine} />
               <Route path="/WorldHomeStats"  component={WorldHomeStats} />
+              <Route path="/medicine"  component={Medicine} />
+
 
 
           </Switch>
