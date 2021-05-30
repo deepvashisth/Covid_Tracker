@@ -1,4 +1,4 @@
-import WorldStats from  './WorldStats.js'
+import WorldStats from  './WorldStats'
 import CountryWise from  './CountryWise'
 
 const WorldHomeStats = () => {
