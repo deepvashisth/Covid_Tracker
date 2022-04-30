@@ -33,7 +33,6 @@ const CountryWise = () => {
                 <td>Country</td>
                 <td>Total Confirmed</td>
                 <td>Total Deaths</td>
-                <td>Total Recovered</td>
               </tr>
             </thead>
 
@@ -44,7 +43,6 @@ const CountryWise = () => {
                     <td>{currElem.Country}</td>
                     <td>{currElem.TotalConfirmed}</td>
                     <td>{currElem.TotalDeaths}</td>
-                    <td>{currElem.TotalRecovered}</td>
                   </tr>
                 );
               })}

@@ -46,15 +46,36 @@ const NavigationBar = () => {
                       Statistics
                     </a>
 
-                    <ul
-                      className="dropdown-menu"
-                      aria-labelledby="dropdownMenuLink"
-                    >
+                    <ul className="dropdown-menu" aria-labelledby="dropdownMenuLink">
                       <li className="statsLi">
                         <Link to="/IndiaStats">India Statistics</Link>
                       </li>
                       <li>
                         <Link to="/WorldHomeStats">World Statistics</Link>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a
+                      className="dropdown-toggle"
+                      href="/"
+                      role="button"
+                      id="dropdownMenuLink"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Services
+                    </a>
+
+                    <ul className="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <li className="statsLi">
+                        <Link to="/vaccine">Check Vaccine Availablity</Link>
+                      </li>
+                      <li>
+                        <a href="https://selfregistration.cowin.gov.in/" 
+                        target="_blank"
+                        rel="noreferrer noopener">
+                          Book vaccine</a>
                       </li>
                     </ul>
                   </li>

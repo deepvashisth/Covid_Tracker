@@ -11,9 +11,10 @@ const WorldStats = () => {
   }, []);
 
   const getCovidData = async () => {
-    const res = await fetch("https://api.covid19api.com/world/total");
+    const res = await fetch("https://api.covid19api.com/summary");
     const actualData = await res.json();
-    setData(actualData);
+    console.log(actualData);
+    setData(actualData.Global);
   };
 
   return (
@@ -39,6 +40,14 @@ const WorldStats = () => {
           <div className="col-sm bor">
             <div>
               <div>
+                <h3>New Confirmed</h3>
+              </div>
+              <h2>{data.NewConfirmed}</h2>
+            </div>
+          </div>
+          <div className="col-sm bor">
+            <div>
+              <div>
                 <h3>Total Deaths</h3>
               </div>
               <h2>{data.TotalDeaths}</h2>
@@ -47,13 +56,13 @@ const WorldStats = () => {
           <div className="col-sm bor">
             <div>
               <div>
-                <h3>Total Recovered</h3>
+                <h3>New Deaths</h3>
               </div>
-              <h2>{data.TotalRecovered}</h2>
+              <h2>{data.NewDeaths}</h2>
             </div>
           </div>
         </div>
-      </div>{" "}
+      </div>
     </div>
   );
 };

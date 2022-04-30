@@ -9,6 +9,7 @@ import IndiaStats from './component/Stats'
 import Vaccine from './component/Vaccine'
 import WorldHomeStats from './component/WorldHomeStats'
 import Medicine from './component/Medicine'
+import Top from './component/Top'
 
 
 
@@ -20,6 +21,7 @@ const App = () => {
   return (
 
     <Router>
+            <Top />
             <Navbar />
             <Switch>
               <Route exact path="/" component={HomeComp} />
