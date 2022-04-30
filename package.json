@@ -3,6 +3,7 @@
   "homepage": "https://Ava68.github.io/covid-tracker",
   "version": "0.1.0",
   "private": true,
+  "proxy": "https://api.pluralsight.com:8000",
   "engines": {
     "node": "14.15.0"
   },
@@ -17,6 +18,7 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-router-dom": "^5.2.0",
+    "proxy": "http://api.covid19india.org/data.json",
     "react-scripts": "4.0.3",
     "web-vitals": "^1.1.2"
   },
