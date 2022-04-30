@@ -3,7 +3,7 @@ import deep from '../images/deep.jpg'
 import '../Css/Contactus.css'
 import avadhesh from '../images/avadhesh.jpeg';
 import ashish from '../images/ashish.jpg';
-import haribabu from '../images/HariBabu.png'
+import divyanshi from '../images/divyanshi.jpeg'
 
 
 
@@ -116,20 +116,20 @@ const Contact = () => {
       <div className='flip-card '>
         <div className="flip-card-inner" >
           <div className="flip-card-front ">
-          <img className='mt-2' style={{width:'120px' ,height:"120px",borderRadius:'50%'}} src={haribabu } alt='deep'/>
+          <img className='mt-2' style={{width:'120px' ,height:"120px",borderRadius:'50%'}} src={divyanshi } alt='deep'/>
             <div className='flip-card-body'>
               
-              <p className='mt-3 h6 name'>HariBabu T</p>
-              <p className='mt-3' >Frontend Developer</p>
+              <p className='mt-3 h6 name'>Divyanshi Pathak</p>
+              <p className='mt-3'>Data analyst</p>
             </div>
           </div>
 
           <div className='flip-card-back'> 
           <div className='flip-card-back-body'>
-          <p style={{paddingTop:'2.6rem',fontWeight:'660'}} className='h6 '>HariBabu T</p>
+          <p style={{paddingTop:'2.6rem',fontWeight:'660'}} className='h6 '>Divyanshi Pathak</p>
           <div className='mt-4 '>
-         <a  href='mailto:itisbabu1098@gmail.com'>mail <i className="fas fa-envelope"></i></a><br />
-          <a  href='https://www.linkedin.com/in/haribabu-t-826301211' target="_blank" rel="noreferrer noopener">Linkedin <i className="fab fa-linkedin"></i></a><br />
+         <a  href='divyanshipathak3@gmail.com'>mail <i className="fas fa-envelope"></i></a><br />
+          <a  href='https://www.linkedin.com/in/divyanshi-pathak-509a49192' target="_blank" rel="noreferrer noopener">Linkedin <i className="fab fa-linkedin"></i></a><br />
            
           </div>
           </div>
