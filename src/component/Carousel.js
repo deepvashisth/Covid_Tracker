@@ -54,22 +54,18 @@ const Carousel = () => {
                 </div>
               </div>
               <div className="container btnCenter">
-                <div className="row">
-                  <div className="col-lg-12  col-md-12 col-sm-12">
-                    <a
-                      href="https://www.medicalnewstoday.com/articles/256521#sars"
-                      target="_blank"
-                      rel="noreferrer noopener"
-                    >
-                      <button
-                        type="button"
-                        className="btn btn-dark btn-lg btn_info"
-                      >
-                        Click here for more info
-                      </button>
-                    </a>
-                  </div>
-                </div>
+                <a
+                  href="https://www.medicalnewstoday.com/articles/256521#sars"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  <button
+                    type="button"
+                    className="btn btn-dark btn-lg btn_info"
+                  >
+                    Click here for more info
+                  </button>
+                </a>
               </div>
             </div>
 
