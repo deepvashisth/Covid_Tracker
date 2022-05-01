@@ -60,10 +60,10 @@
   font-family: "Roboto", sans-serif;
   font-size: 1.9rem;
 }
-.btnbtn{
+.btnbtn {
   color: white;
 }
-.btnbtn :hover{
+.btnbtn :hover {
   color: white;
 }
 @media (max-width: 1085px) {

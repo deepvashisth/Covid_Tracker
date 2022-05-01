@@ -1,11 +1,11 @@
-import Worldstats from "./WorldStats";
-import CountryWise from "./CountryWise";
+import worldstats from "./worldstats";
+import countryWise from "./countryWise";
 
 const WorldHomeStats = () => {
   return (
     <div>
-      <Worldstats />
-      <CountryWise />
+      <worldstats />
+      <countryWise />
     </div>
   );
 };
