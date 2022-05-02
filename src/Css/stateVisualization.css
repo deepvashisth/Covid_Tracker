@@ -3,6 +3,7 @@
   width: 800px;
   justify-content: center;
   align-items: center;
+  padding-left: 10%;
 }
 
 .Line {
@@ -11,6 +12,7 @@
   width: 700px;
   justify-content: center;
   align-items: center;
+  padding-left: 10%;
 }
 
 .Pie {
@@ -18,4 +20,8 @@
   padding-top: 350px;
   height: 200px;
   width: 400px;
+  padding-left: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

@@ -124,11 +124,11 @@ const CountryVisualization = () => {
 
   return (
     <div className="chart ">
-      <div className="Bar">
+      <div className="WorldBar">
         <Bar options={BarOptions} data={data} />
       </div>
 
-      <div className="Line">
+      <div className="WorldLine">
         <Line options={LineOptions} data={data1} />
       </div>    
     </div>

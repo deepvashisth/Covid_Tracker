@@ -1,14 +1,17 @@
-.Bar {
+.WorldBar {
     height: 400px;
-    width: 100%;
+    width: 90%;
     justify-content: center;
     align-items: center;
+    padding-left: 10%;
+
   }
   
-  .Line {
+  .WorldLine {
     padding-top: 300px;
     height: 300px;
-    width: 100%;
+    width: 90%;
     justify-content: center;
     align-items: center;
+    padding-left: 10%;
   }
