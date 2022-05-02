@@ -12,6 +12,15 @@
   color: brown;
 }
 
+
+.table_content{
+  overflow-y: auto;
+  height: 395px;
+}
+.fixx{
+  position: sticky;
+  top: 0;
+}
 .stats_Table {
   border-collapse: collapse;
   margin: 25px 0;

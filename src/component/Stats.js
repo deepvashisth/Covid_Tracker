@@ -32,14 +32,17 @@ const Stats = () => {
           </h1>
         </div>
 
-        <div className="table-responsive table-content">
+
+
+        <div className="table-responsive table_content">
+
           <table className="table table-hover stats_Table">
             <thead className="thead-dark">
-              <tr>
-                <td>State</td>
-                <td>Confirmed</td>
-                <td>Recovered</td>
-                <td>Deaths</td>
+              <tr className="fixx">
+                <th>State</th>
+                <th>Confirmed</th>
+                <th>Recovered</th>
+                <th>Deaths</th>
               </tr>
             </thead>
 
