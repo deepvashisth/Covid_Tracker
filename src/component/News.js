@@ -44,38 +44,132 @@ const News = () => {
             <div className="content col-lg-12 col-md-12 col-sm-12">
               <img
                 class="d-block  w-100 images"
+                src={news3.urlToImage}
+                alt="First slide"
+              />
+            </div>
+            <br></br>
+            <div className="News-Content">
+              <div className="container-fluid ">
+                <div className="row ">
+                  <div className="col-lg-6 col-md-6 d-flex justify-content-center">
+                    <h4>{news3.title}</h4>
+                  </div>
+                  <div className="col-lg-6 col-md-6 d-flex justify-content-center">
+                    <p>{news3.description}</p>
+                  </div>
+                </div>
+              </div>
+              <br></br>
+              <a className="link" href={news3.url}>
+                read full article
+              </a>
+            </div>
+            <br></br>
+          </div>
+          <div class="carousel-item ">
+            <div className="content col-lg-12 col-md-12 col-sm-12">
+              <img
+                class="d-block  w-100 images"
+                src={news2.urlToImage}
+                alt="First slide"
+              />
+            </div>
+            <br></br>
+            <div className="News-Content">
+              <div className="container-fluid ">
+                <div className="row ">
+                  <div className="col-lg-6 col-md-6 d-flex justify-content-center">
+                    <h4>{news2.title}</h4>
+                  </div>
+                  <div className="col-lg-6 col-md-6 d-flex justify-content-center">
+                    <p>{news2.description}</p>
+                  </div>
+                </div>
+              </div>
+              <br></br>
+              <a className="link" href={news2.url}>
+                read full article
+              </a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div className="content col-lg-12 col-md-12 col-sm-12">
+              <img
+                class="d-block  w-100 images"
                 src={news1.urlToImage}
                 alt="First slide"
               />
             </div>
-          </div>
-          <div class="carousel-item ">
-            <img
-              class="d-block w-100 images"
-              src={news2.urlToImage}
-              alt="Second slide"
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              class="d-block w-100 images"
-              src={news3.urlToImage}
-              alt="Third slide"
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              class="d-block w-100 images"
-              src={news4.urlToImage}
-              alt="fourth slide"
-            />
+            <br></br>
+            <div className="News-Content">
+              <div className="container-fluid ">
+                <div className="row ">
+                  <div className="col-lg-6 col-md-6 d-flex justify-content-center">
+                    <h4>{news1.title}</h4>
+                  </div>
+                  <div className="col-lg-6 col-md-6 d-flex justify-content-center">
+                    <p>{news1.description}</p>
+                  </div>
+                </div>
+              </div>
+              <br></br>
+              <a className="link" href={news1.url}>
+                read full article
+              </a>
+            </div>
           </div>
           <div class="carousel-item">
-            <img
-              class="d-block w-100 images"
-              src={news5.urlToImage}
-              alt="fourth slide"
-            />
+            <div className="content col-lg-12 col-md-12 col-sm-12">
+              <img
+                class="d-block  w-100 images"
+                src={news4.urlToImage}
+                alt="First slide"
+              />
+            </div>
+            <br></br>
+            <div className="News-Content">
+              <div className="container-fluid ">
+                <div className="row ">
+                  <div className="col-lg-6 col-md-6 d-flex justify-content-center">
+                    <h4>{news4.title}</h4>
+                  </div>
+                  <div className="col-lg-6 col-md-6 d-flex justify-content-center">
+                    <p>{news4.description}</p>
+                  </div>
+                </div>
+              </div>
+              <br></br>
+              <a className="link" href={news4.url}>
+                read full article
+              </a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div className="content col-lg-12 col-md-12 col-sm-12">
+              <img
+                class="d-block  w-100 images"
+                src={news5.urlToImage}
+                alt="First slide"
+              />
+            </div>
+            <br></br>
+            <div className="News-Content">
+              <div className="container-fluid ">
+                <div className="row ">
+                  <div className="col-lg-6 col-md-6 d-flex justify-content-center">
+                    <h4>{news5.title}</h4>
+                  </div>
+                  <div className="col-lg-6 col-md-6 d-flex justify-content-center">
+                    <p>{news5.description}</p>
+                  </div>
+                </div>
+              </div>
+              <br></br>
+              <a className="link" href={news5.url}>
+                read full article
+              </a>
+            </div>
           </div>
         </div>
         <button

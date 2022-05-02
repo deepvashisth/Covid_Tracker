@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../Css/stats.css";
+import StateVisualization from "./StateVisualization";
 
 const Stats = () => {
   const [data, setData] = useState([]);
@@ -16,7 +17,7 @@ const Stats = () => {
         "https://api.rootnet.in/covid19-in/stats/latest"
       );
       const actualData = await response.json();
-      console.log(actualData.data.regional);
+      // console.log(actualData.data.regional);
       setData(actualData.data.regional);
     } catch (e) {
       console.log(e);
@@ -31,7 +32,7 @@ const Stats = () => {
           </h1>
         </div>
 
-        <div className="table-responsive">
+        <div className="table-responsive table-content">
           <table className="table table-hover stats_Table">
             <thead className="thead-dark">
               <tr>
@@ -55,6 +56,10 @@ const Stats = () => {
               })}
             </tbody>
           </table>
+        </div>
+        <br></br>
+        <div className="container-fluid visualization">
+          <StateVisualization />
         </div>
       </div>
       {}

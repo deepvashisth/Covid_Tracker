@@ -13,7 +13,7 @@ const WorldStats = () => {
   const getCovidData = async () => {
     const res = await fetch("https://api.covid19api.com/summary");
     const actualData = await res.json();
-    console.log(actualData);
+    // console.log(actualData);
     setData(actualData.Global);
   };
 

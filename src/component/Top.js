@@ -15,7 +15,7 @@ const Top = () => {
     console.log(actualData);
     setData(actualData.Global);
   };
-  const newLocal = " ";
+
   return (
     <div className="container-fluid">
       <div className="container">

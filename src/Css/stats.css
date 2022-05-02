@@ -3,6 +3,11 @@
 .text {
   font-family: "Montserrat", sans-serif;
 }
+
+.table-content {
+  overflow: scroll;
+  height: 300px;
+}
 .text-span {
   color: brown;
 }
