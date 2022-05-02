@@ -4,3 +4,18 @@
   justify-content: center;
   align-items: center;
 }
+
+.Line {
+  padding-top: 200px;
+  height: 200px;
+  width: 700px;
+  justify-content: center;
+  align-items: center;
+}
+
+.Pie {
+  padding-left: 50px;
+  padding-top: 350px;
+  height: 200px;
+  width: 400px;
+}
