@@ -1,5 +1,5 @@
-import WorldStats from "./WorldStats";
-import CountryWise from "./CountryWise";
+import WorldStats from "./worldstats.js";
+import CountryWise from "./countryWise.js";
 
 const WorldHomeStats = () => {
   return (
