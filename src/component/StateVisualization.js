@@ -1,4 +1,5 @@
 import React from "react";
+import "../Css/stateVisualization.css";
 import { useEffect, useState } from "react";
 import { Bar } from "react-chartjs-2";
 import {
@@ -29,11 +30,36 @@ const StateVisualization = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  const options = {
+    responsive: true,
+    plugins: {
+      legend: {
+        position: "top",
+      },
+      title: {
+        display: true,
+        text: "Total Confirmed Cases",
+      },
+    },
+  };
+
+  const labels = [];
+  const data1 = [];
+  const lengthOfApi = visualData.length;
+
+  console.log(lengthOfApi);
+
+  for (var i = 0; i < lengthOfApi; i++) {
+    labels.push(visualData[i].loc);
+    data1.push(visualData[i].totalConfirmed);
+  }
+
   const data = {
-    labels: ["red", "green", "blue", "yellow"],
+    labels: labels,
     datasets: [
       {
-        data: [12, 44, 32, 12],
+        data: data1,
+        backgroundColor: ["#F66B0E"],
       },
     ],
   };
@@ -45,15 +71,18 @@ const StateVisualization = () => {
       );
       const actualData = await response.json();
       console.log(actualData.data.regional);
-      setvisualData(actualData.data);
+      // console.log(actualData.data.regional.length);
+      setvisualData(actualData.data.regional);
     } catch (e) {
       console.log(e);
     }
   };
 
   return (
-    <div className="chart">
-      <Bar data={data} />
+    <div className="chart ">
+      <div className="Bar">
+        <Bar options={options} data={data} />
+      </div>
     </div>
   );
 };

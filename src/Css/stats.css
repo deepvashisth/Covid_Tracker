@@ -12,12 +12,11 @@
   color: brown;
 }
 
-
-.table_content{
+.table_content {
   overflow-y: auto;
   height: 395px;
 }
-.fixx{
+.fixx {
   position: sticky;
   top: 0;
 }

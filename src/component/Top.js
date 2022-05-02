@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../Css/Top.css";
-import $ from 'jquery';
+import $ from "jquery";
 
 const Top = () => {
   const [data, setData] = useState([]);
@@ -17,18 +17,15 @@ const Top = () => {
     setData(actualData.Global);
   };
 
-
-
-  const Noti = () =>{
+  const Noti = () => {
     var i = 1;
-    while(i !== 6 ){
-      var change = $('#nn');
+    while (i !== 6) {
+      var change = $("#nn");
       console.log(change);
       change.addClass(".displayText");
       ++i;
     }
   };
-  
 
   return (
     <div className="cen col-lg-8 ">
@@ -48,22 +45,26 @@ const Top = () => {
           </div>
         </div>
       </div> */}
-      <div id="carouselExampleSlidesOnly cc" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-    <h6>Total Confirmed: {data.TotalConfirmed}</h6>
-    </div>
-    <div class="carousel-item">
-    <h6>New Confirmed: {data.NewConfirmed}</h6>
-    </div>
-    <div class="carousel-item">
-    <h6>Total Deaths: {data.TotalDeaths}</h6>
-    </div>
-    <div class="carousel-item">
-    <h6>New Deaths: {data.NewDeaths}</h6>
-    </div>
-  </div>
-</div>
+      <div
+        id="carouselExampleSlidesOnly cc"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <h6>Total Confirmed: {data.TotalConfirmed}</h6>
+          </div>
+          <div class="carousel-item">
+            <h6>New Confirmed: {data.NewConfirmed}</h6>
+          </div>
+          <div class="carousel-item">
+            <h6>Total Deaths: {data.TotalDeaths}</h6>
+          </div>
+          <div class="carousel-item">
+            <h6>New Deaths: {data.NewDeaths}</h6>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
