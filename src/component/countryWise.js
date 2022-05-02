@@ -26,13 +26,13 @@ const CountryWise = () => {
           </h1>
         </div>
 
-        <div className="table-responsive">
+        <div className="table-responsive table_content">
           <table className="table table-hover stats_Table">
             <thead className="thead-dark">
-              <tr>
-                <td>Country</td>
-                <td>Total Confirmed</td>
-                <td>Total Deaths</td>
+              <tr className="fixx">
+                <th>Country</th>
+                <th>Total Confirmed</th>
+                <th>Total Deaths</th>
               </tr>
             </thead>
 

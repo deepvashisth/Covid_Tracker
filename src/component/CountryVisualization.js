@@ -1,5 +1,5 @@
 import React from "react";
-import "../Css/stateVisualization.css";
+import "../Css/CountryVisualization.css";
 import { useEffect, useState } from "react";
 import { Bar, Line, Pie } from "react-chartjs-2";
 import {
@@ -27,7 +27,7 @@ ChartJS.register(
   Legend
 );
 
-const StateVisualization = () => {
+const CountryVisualization = () => {
   const [visualData, setvisualData] = useState([]);
 
   useEffect(() => {
@@ -75,17 +75,15 @@ const StateVisualization = () => {
 
   const dataLine = [];
   const dataBar = [];
-  const dataPie = [];
   const backgroundColor1 = [];
   const lengthOfApi = visualData.length;
 
   console.log(lengthOfApi);
 
   for (var i = 0; i < lengthOfApi; i++) {
-    labels.push(visualData[i].loc);
-    dataBar.push(visualData[i].totalConfirmed);
-    dataLine.push(visualData[i].discharged);
-    dataPie.push(visualData[i].deaths);
+    labels.push(visualData[i].Country);
+    dataBar.push(visualData[i].TotalConfirmed);
+    dataLine.push(visualData[i].TotalDeaths);
     var color = getRandomColor();
     backgroundColor1.push(color);
   }
@@ -110,26 +108,15 @@ const StateVisualization = () => {
     ],
   };
 
-  const data2 = {
-    labels: labels,
-    datasets: [
-      {
-        data: dataPie,
-
-        backgroundColor: backgroundColor1,
-      },
-    ],
-  };
 
   const getVisualData = async () => {
     try {
       const response = await fetch(
-        "https://api.rootnet.in/covid19-in/stats/latest"
+        "https://api.covid19api.com/summary"
       );
       const actualData = await response.json();
-      console.log(actualData.data.regional);
-      // console.log(actualData.data.regional.length);
-      setvisualData(actualData.data.regional);
+      console.log(actualData.Countries);
+      setvisualData(actualData.Countries);
     } catch (e) {
       console.log(e);
     }
@@ -143,13 +130,9 @@ const StateVisualization = () => {
 
       <div className="Line">
         <Line options={LineOptions} data={data1} />
-      </div>
-
-      <div className="Pie">
-        <Pie data={data2} />
-      </div>
+      </div>    
     </div>
   );
 };
 
-export default StateVisualization;
+export default CountryVisualization;

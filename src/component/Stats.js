@@ -35,7 +35,6 @@ const Stats = () => {
 
 
         <div className="table-responsive table_content">
-
           <table className="table table-hover stats_Table">
             <thead className="thead-dark">
               <tr className="fixx">
