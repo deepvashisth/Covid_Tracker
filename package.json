@@ -3,6 +3,7 @@
   "homepage": "https://Ava68.github.io/covid-tracker",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:5000",
   "engines": {
     "node": "14.15.0"
   },
