@@ -1,7 +1,7 @@
 import React from "react";
 import "../Css/CountryVisualization.css";
 import { useEffect, useState } from "react";
-import { Bar, Line, Pie } from "react-chartjs-2";
+import { Bar, Line } from "react-chartjs-2";
 import {
   Chart as ChartJS,
   ArcElement,
@@ -49,7 +49,7 @@ const CountryVisualization = () => {
     responsive: true,
     plugins: {
       legend: {
-        display:false
+        display: false,
       },
       title: {
         display: true,
@@ -62,7 +62,7 @@ const CountryVisualization = () => {
     responsive: true,
     plugins: {
       legend: {
-        display:false
+        display: false,
       },
       title: {
         display: true,
@@ -108,12 +108,9 @@ const CountryVisualization = () => {
     ],
   };
 
-
   const getVisualData = async () => {
     try {
-      const response = await fetch(
-        "https://api.covid19api.com/summary"
-      );
+      const response = await fetch("https://api.covid19api.com/summary");
       const actualData = await response.json();
       console.log(actualData.Countries);
       setvisualData(actualData.Countries);
@@ -130,7 +127,7 @@ const CountryVisualization = () => {
 
       <div className="WorldLine">
         <Line options={LineOptions} data={data1} />
-      </div>    
+      </div>
     </div>
   );
 };

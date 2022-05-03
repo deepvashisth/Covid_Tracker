@@ -46,7 +46,10 @@ const NavigationBar = () => {
                       Statistics
                     </a>
 
-                    <ul className="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <ul
+                      className="dropdown-menu"
+                      aria-labelledby="dropdownMenuLink"
+                    >
                       <li className="statsLi">
                         <Link to="/IndiaStats">India Statistics</Link>
                       </li>
@@ -67,15 +70,21 @@ const NavigationBar = () => {
                       Services
                     </a>
 
-                    <ul className="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <ul
+                      className="dropdown-menu"
+                      aria-labelledby="dropdownMenuLink"
+                    >
                       <li className="statsLi">
                         <Link to="/vaccine">Check Vaccine Availablity</Link>
                       </li>
                       <li>
-                        <a href="https://selfregistration.cowin.gov.in/" 
-                        target="_blank"
-                        rel="noreferrer noopener">
-                          Book vaccine</a>
+                        <a
+                          href="https://selfregistration.cowin.gov.in/"
+                          target="_blank"
+                          rel="noreferrer noopener"
+                        >
+                          Book vaccine
+                        </a>
                       </li>
                     </ul>
                   </li>
@@ -84,7 +93,7 @@ const NavigationBar = () => {
                   </li>
 
                   <li>
-                    <Link to="/medicine">People Sentiment</Link>
+                    <Link to="/Sentiment">People Sentiment</Link>
                   </li>
                   <li>
                     <Link to="/Contact">Contact Us</Link>
