@@ -1,4 +1,5 @@
 from flask import Flask
+from flask import jsonify
 
 app = Flask(__name__)
 
@@ -8,7 +9,13 @@ app = Flask(__name__)
 
 @app.route("/sentiment")
 def sentiment():
-   return "hello deep vashisith"
+   data = {
+            "employess" : ["Avadhesh","deep","Ashish","Divyanshi"],
+            
+        }
+   return jsonify(data)
+
+
 
 
 if __name__ == "__main__":

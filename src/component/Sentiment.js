@@ -12,7 +12,7 @@ const Sentiment = () => {
 
   async function fetchText() {
     let response = await fetch("/sentiment");
-    let data = await response.text();
+    let data = await response.json();
     console.log(data);
   }
 
