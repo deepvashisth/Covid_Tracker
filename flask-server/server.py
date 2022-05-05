@@ -1,15 +1,21 @@
 from flask import Flask
 from flask import jsonify
-import creds
+import tweepy
+
+import Analysis
 
 app = Flask(__name__)
 
 # Define a route to fetch the available articles
 
 
+
+   
+
+
 @app.route("/")
 def hello():
-   return creds.TwitterBearerToken
+   return Analysis.getTweets()
    
 
 @app.route("/sentiment")
