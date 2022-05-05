@@ -1,16 +1,29 @@
 import tweepy
 import creds
 from flask import jsonify
-
+import pandas as pd 
 
 def getTweets():
-   lista = []
+   fields = ['tweets'] 
+   rows =  [] 
+
+   dicta = {}
    client = tweepy.Client(bearer_token=creds.TwitterBearerToken)
    query = 'covid -is:retweet'
-   tweets = client.search_recent_tweets(query=query, tweet_fields=['context_annotations', 'created_at'], max_results=20)
+   tweets = client.search_recent_tweets(query=query,tweet_fields=['context_annotations', 'created_at','lang'], max_results=100)
+   
 
    for tweet in tweets.data:
-      lista.append(tweet.text)
+      dicta.update({ tweet.text :tweet['lang'] } )
+   
+   for i in dicta:
+      if dicta[i] == "en":
+         rows.append(i)
 
-   return jsonify(lista)
+   df = pd.DataFrame(rows)
+   df.to_csv('Tweets.csv', index=False)
+
+   # np.savetxt("tweets.csv", rows, delimiter=",", fmt="% s")
+
+   return jsonify(rows)
 

@@ -8,11 +8,13 @@ const Sentiment = () => {
 
   useEffect(() => {
     fetchText();
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   async function fetchText() {
     let response = await fetch("/sentiment");
-    let data = await response.text();
+    let data = await response.json();
     console.log(data);
   }
 
