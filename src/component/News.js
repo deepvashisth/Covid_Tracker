@@ -36,14 +36,14 @@ const News = () => {
     <div>
       <div
         id="carouselExampleControls1"
-        class="carousel slide"
+        className="carousel slide"
         data-ride="carousel"
       >
-        <div class="carousel-inner">
-          <div class="carousel-item active main-box">
+        <div className="carousel-inner">
+          <div className="carousel-item active main-box">
             <div className="content col-lg-12 col-md-12 col-sm-12">
               <img
-                class="d-block  w-100 images"
+                className="d-block  w-100 images"
                 src={news3.urlToImage}
                 alt="First slide"
               />
@@ -93,7 +93,7 @@ const News = () => {
               </a>
             </div>
           </div>
-          <div class="carousel-item">
+          <div className="carousel-item">
             <div className="content col-lg-12 col-md-12 col-sm-12">
               <img
                 class="d-block  w-100 images"
@@ -119,10 +119,10 @@ const News = () => {
               </a>
             </div>
           </div>
-          <div class="carousel-item">
+          <div className="carousel-item">
             <div className="content col-lg-12 col-md-12 col-sm-12">
               <img
-                class="d-block  w-100 images"
+                className="d-block  w-100 images"
                 src={news4.urlToImage}
                 alt="First slide"
               />
@@ -145,10 +145,10 @@ const News = () => {
               </a>
             </div>
           </div>
-          <div class="carousel-item">
+          <div className="carousel-item">
             <div className="content col-lg-12 col-md-12 col-sm-12">
               <img
-                class="d-block  w-100 images"
+                className="d-block  w-100 images"
                 src={news5.urlToImage}
                 alt="First slide"
               />
