@@ -4,16 +4,14 @@ from flask import jsonify
 import pandas as pd 
 
 def getTweets():
-   fields = ['tweets'] 
    rows =  [] 
-
    dicta = {}
    client = tweepy.Client(bearer_token=creds.TwitterBearerToken)
    query = 'covid -is:retweet'
-   tweets = client.search_recent_tweets(query=query,tweet_fields=['context_annotations', 'created_at','lang'], max_results=100)
+   tweets = tweepy.Paginator(client.search_recent_tweets, query=query,
+                              tweet_fields=['context_annotations', 'created_at','lang'], max_results=100).flatten(limit=1000)
    
-
-   for tweet in tweets.data:
+   for tweet in tweets:
       dicta.update({ tweet.text :tweet['lang'] } )
    
    for i in dicta:
