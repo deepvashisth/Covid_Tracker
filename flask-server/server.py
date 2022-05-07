@@ -2,7 +2,7 @@ from flask import Flask
 from flask import jsonify
 import tweepy
 import creds
-import Analysis
+import VaccineAnalysis
 
 app = Flask(__name__)
 
@@ -15,13 +15,13 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello():
-   return Analysis.getTweets()
+   return VaccineAnalysis.getVaccineTweets()
    
 
 @app.route("/sentiment")
 def sentiment():
    data = {
-            "employess" : ["Avadhesh","deep","Ashish"],
+            "employess" : ["Avadhesh","deep"],
             
         }
    return jsonify(data)
