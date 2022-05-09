@@ -9,7 +9,7 @@ def getTweets():
    client = tweepy.Client(bearer_token=creds.TwitterBearerToken)
    query = 'covid -is:retweet'
    tweets = tweepy.Paginator(client.search_recent_tweets, query=query,
-                              tweet_fields=['context_annotations', 'created_at','lang'], max_results=100).flatten(limit=1000)
+                              tweet_fields=['context_annotations', 'created_at','lang'], max_results=100).flatten(limit=5000)
    
    for tweet in tweets:
       dicta.update({ tweet.text :tweet['lang'] } )
