@@ -2,8 +2,9 @@ from flask import Flask
 from flask import jsonify
 import tweepy
 import creds
-import Analysis
-
+import getCovidTweets
+import getVaccineTweets
+import covidTweetsAnalysis
 app = Flask(__name__)
 
 # Define a route to fetch the available articles
@@ -15,13 +16,13 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello():
-   return Analysis.getTweets()
+   return " CovidAnalysis.getCovidTweets()"
    
 
 @app.route("/sentiment")
 def sentiment():
    data = {
-            "employess" : ["Avadhesh","deep","Ashish"],
+            "employess" : ["Avadhesh","deep"],
             
         }
    return jsonify(data)
