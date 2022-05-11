@@ -24,4 +24,5 @@ def getVaccineTweets():
    # np.savetxt("tweets.csv", rows, delimiter=",", fmt="% s")
 
    return jsonify(rows)
+   
 
